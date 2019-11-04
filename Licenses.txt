@@ -1,0 +1,19 @@
+Sound FX
+https://www.zapsplat.com/license-type/standard-license/
+https://www.freesfx.co.uk/
+
+Eric Matyas
+https://soundimage.org
+Sound fx and textures
+
+Music
+https://incompetech.com/music/
+
+Music from https://filmmusic.io
+"Oppressive Gloom" by Kevin MacLeod (https://incompetech.com)
+License: CC BY (http://creativecommons.org/licenses/by/4.0/)
+
+
+Skybox at startup
+https://github.com/SquirrelyJones/DarkAndStormy
+

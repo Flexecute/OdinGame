@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/preLoad.unity
+    guid: 4d3ed118a93491042adfba605b15bc5c
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 3ea9d64ea208dc849ab3b500dfa49585
+  - enabled: 1
+    path: Assets/Scenes/RewardScene.unity
+    guid: 3695a89653ecd384883409165c6a1fdb
+  - enabled: 1
+    path: Assets/Scenes/PowerupScene.unity
+    guid: e2b4b75ccb28cef4d8c80284a05ed206
+  - enabled: 1
+    path: Assets/Scenes/Desert/Desert.unity
+    guid: 8dc229f5120b7a14b86973b7be83164b
+  - enabled: 1
+    path: Assets/Scenes/Graveyard/Graveyard.unity
+    guid: 6d1fd4c551e772b4ba081f346614150f
+  - enabled: 1
+    path: Assets/Scenes/Castle/Castle.unity
+    guid: b42ca6dff145e6b47949db3245a37ad1
+  m_configObjects: {}
