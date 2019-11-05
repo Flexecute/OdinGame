@@ -61,7 +61,7 @@ public class BulletWideMovement : MonoBehaviour
             transform.Translate(translation, Space.World);
             // Did we hit anything?
             Collider[] hitColliders = Physics.OverlapBox(prevPos, boxHalfExtents, boxRotation, shootableLayerMask);
-            ExtDebug.DrawBox(prevPos, boxHalfExtents, boxRotation, Color.red);
+            //ExtDebug.DrawBox(prevPos, boxHalfExtents, boxRotation, Color.red);
             //Debug.Log(Time.deltaTime + " " + prevPos.ToString());
             int i = 0;
             //Check when there is a new collider coming into contact with the box

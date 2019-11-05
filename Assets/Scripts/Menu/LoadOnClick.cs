@@ -16,7 +16,10 @@ public class LoadOnClick : MonoBehaviour
         loadImage.SetActive(true);
         // Load the next scene of the player
         PlayerData playerData = PlayerData.Instance;
-        SceneManager.LoadScene(playerData.currentLevel);
+        if (playerData.currentLevel > PlayerData.LastLevel)
+            SceneManager.LoadScene(6);
+        else
+            SceneManager.LoadScene(playerData.currentLevel);
     }
 
     /// <summary>
