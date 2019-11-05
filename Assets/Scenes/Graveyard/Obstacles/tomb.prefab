@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 68930610686669569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,5 +90,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.34, y: 3.68, z: 2.73}
+  m_Size: {x: 1.34, y: 4.73, z: 2.73}
   m_Center: {x: -0.0068396926, y: 1.04, z: 0.004288316}

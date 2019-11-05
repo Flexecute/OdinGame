@@ -5347,6 +5347,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EpicMan
       objectReference: {fileID: 0}
+    - target: {fileID: 4153585857953590208, guid: c5512b7c8c7d2184288d5a82c4e179e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153585857953590208, guid: c5512b7c8c7d2184288d5a82c4e179e8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Difficulty1
+      objectReference: {fileID: 0}
     - target: {fileID: 4153585857953590232, guid: c5512b7c8c7d2184288d5a82c4e179e8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5532,6 +5542,11 @@ PrefabInstance:
     - target: {fileID: 7792830084824104096, guid: 8da90c8d8141e554aa8c610bba87045c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148271921537152808, guid: 8da90c8d8141e554aa8c610bba87045c,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6448,6 +6463,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1586231473, guid: 3ffe9a3e9c090794392862fcb90dbef9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1586231473, guid: 3ffe9a3e9c090794392862fcb90dbef9, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7689266670256072974, guid: 3ffe9a3e9c090794392862fcb90dbef9,
         type: 3}
       propertyPath: damageImage
@@ -6462,14 +6485,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Weapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586231473, guid: 3ffe9a3e9c090794392862fcb90dbef9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586231473, guid: 3ffe9a3e9c090794392862fcb90dbef9, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5100187613601024518, guid: 3ffe9a3e9c090794392862fcb90dbef9, type: 3}
@@ -6897,6 +6912,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EpicMan (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153585857953590208, guid: c5512b7c8c7d2184288d5a82c4e179e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153585857953590208, guid: c5512b7c8c7d2184288d5a82c4e179e8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Difficulty1
       objectReference: {fileID: 0}
     - target: {fileID: 4153585857953590232, guid: c5512b7c8c7d2184288d5a82c4e179e8,
         type: 3}
@@ -10273,6 +10298,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EpicMan (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4153585857953590208, guid: c5512b7c8c7d2184288d5a82c4e179e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153585857953590208, guid: c5512b7c8c7d2184288d5a82c4e179e8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Difficulty1
+      objectReference: {fileID: 0}
     - target: {fileID: 4153585857953590232, guid: c5512b7c8c7d2184288d5a82c4e179e8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10910,6 +10945,11 @@ PrefabInstance:
     - target: {fileID: 7792830084824104096, guid: af4ae3cf2e8821e4b8c7ac133e814da4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148271921537152808, guid: af4ae3cf2e8821e4b8c7ac133e814da4,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

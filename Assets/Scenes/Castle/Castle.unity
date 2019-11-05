@@ -5830,6 +5830,14 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1071961556, guid: 3ffe9a3e9c090794392862fcb90dbef9, type: 3}
+      propertyPath: m_Value
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071961556, guid: 3ffe9a3e9c090794392862fcb90dbef9, type: 3}
+      propertyPath: m_WholeNumbers
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ffe9a3e9c090794392862fcb90dbef9, type: 3}
 --- !u!1001 &1055616332
@@ -6535,6 +6543,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedDragon
       objectReference: {fileID: 0}
+    - target: {fileID: 265991565, guid: 679a7f813b18dc14db32009a1f10a536, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 265991565, guid: 679a7f813b18dc14db32009a1f10a536, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.56
+      objectReference: {fileID: 0}
     - target: {fileID: 4153585857953590232, guid: 679a7f813b18dc14db32009a1f10a536,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6610,14 +6626,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 283d355b08bd70e4f916aafc22e7322f,
         type: 2}
-    - target: {fileID: 265991565, guid: 679a7f813b18dc14db32009a1f10a536, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 265991565, guid: 679a7f813b18dc14db32009a1f10a536, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.56
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 773911121, guid: 679a7f813b18dc14db32009a1f10a536, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 679a7f813b18dc14db32009a1f10a536, type: 3}
