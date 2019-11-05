@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey("escape"))
         {
-            Application.Quit();
+            SceneManager.LoadScene(1);
         }
 
         var horizontal = Input.GetAxis("Horizontal");

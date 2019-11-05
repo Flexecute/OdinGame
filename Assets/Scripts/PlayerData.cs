@@ -14,7 +14,7 @@ public class PlayerData
     public List<Ability> powerupOnAbility; // Which abilities the previous powerups are applied on
     public List<AbilityPowerup> unusedPowerups;
 
-    public const int FirstLevel = 6;
+    public const int FirstLevel = 4;
     public const int LastLevel = 6;
     public int currentLevel=FirstLevel;
     public float previousLevelTime=0f;
