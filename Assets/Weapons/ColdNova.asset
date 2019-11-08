@@ -15,13 +15,13 @@ MonoBehaviour:
   aName: FrostNova
   aSprite: {fileID: 21300000, guid: eced15bb959edc54c8457ab75f9a45b5, type: 3}
   audioEvent: {fileID: 11400000, guid: 430eb6656977f0648a818a401ad4571f, type: 2}
-  aBaseCooldown: 1
+  aBaseCooldown: 5
   tellTime: 0
   cameraRange: 1
   damage: 0
-  radius: 7
+  radius: 6
   coldEffect: 1
-  coldDuration: 5
+  coldDuration: 3
   attackAnimationPrefab: {fileID: 420243698300347976, guid: d7a00f84b0fd3a246b1847d99830f4fc,
     type: 3}
   shootableLayers: 080000000a000000

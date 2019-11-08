@@ -31,7 +31,13 @@ public class BulletMovement : MonoBehaviour
 
     public void Initiailise(Vector3 initDirection, float initSpeed, int initDamage, float weaponRange, int pierce, int layerMask)
     {
+
         bulletSpeed = initSpeed;
+        // All bullets go faster at higher difficulty
+        int difficultyLevel = PlayerData.Instance.difficultyLevel;
+        if (difficultyLevel > 0)
+            bulletSpeed = bulletSpeed * (difficultyLevel * PlayerData.difficultySpeedFactor);
+
         damage = initDamage;
         direction = initDirection.normalized;
         prevPos = transform.position;

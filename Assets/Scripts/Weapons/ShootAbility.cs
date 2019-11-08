@@ -12,7 +12,7 @@ public class ShootAbility : Ability
     public int[] shootableLayers;
     public int extraShots;
     private BulletLauncher launcher;
-    public int multishotSpreadAngle = 5;
+    public int multishotSpreadAngle = 10;
     public float weaponRange = 10f;
     public int pierce;
 

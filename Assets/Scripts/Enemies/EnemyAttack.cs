@@ -35,6 +35,13 @@ public class EnemyAttack : MonoBehaviour, IColdable
         // Set up the weapon
         weapon = Instantiate(weaponPrefab.GetComponent<Weapon>(), firePoint.position, firePoint.rotation);
         attackRate = Mathf.Max(attackRate, weapon.getAttackRate());
+        // Factor attack rate according to difficulty
+        int difficultyLevel = PlayerData.Instance.difficultyLevel;
+        if (difficultyLevel > 0)
+        {
+            attackRate = attackRate / (difficultyLevel * PlayerData.difficultySpeedFactor);
+            tellTime = tellTime / (difficultyLevel * PlayerData.difficultySpeedFactor);
+        }
         weapon.FirePoint = firePoint;
         animator = GetComponentInChildren<PlayerAnimationController>();
         // Randomly initialise the attack timer

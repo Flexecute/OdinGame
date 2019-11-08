@@ -51,6 +51,7 @@ public class BulletLauncher : MonoBehaviour
         {
             shootableLayerMask = shootableLayerMask + (1 << layer);
         }
+        extraShots = 6;
     }
 
     void OnDisable()

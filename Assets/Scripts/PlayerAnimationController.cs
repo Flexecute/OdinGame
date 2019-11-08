@@ -42,6 +42,16 @@ public class PlayerAnimationController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Permanently changes the speed
+    /// </summary>
+    /// <param name="factor"></param>
+    internal void SetAnimationSpeed(float factor)
+    {
+        animator.speed = animator.speed * factor; 
+        defaultAnimationSpeed = animator.speed;
+    }
+
     public void AnimateIdle()
     {
         animator.SetBool(IDLE_HASH, true);

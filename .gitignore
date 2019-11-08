@@ -21,6 +21,7 @@ obj/
 *.unityproj
 *.booproj
 bin/
+MacBin.App/
 
 ============
 OS generated

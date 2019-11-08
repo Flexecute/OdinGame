@@ -62,6 +62,15 @@ public class EnemyAttackFire : MonoBehaviour, IColdable
         {
             shootableLayerMask = shootableLayerMask + (1 << layer);
         }
+
+        // Factor attack rate according to difficulty
+        int difficultyLevel = PlayerData.Instance.difficultyLevel;
+        if (difficultyLevel > 0)
+        {
+            attackRate = attackRate / (difficultyLevel * PlayerData.difficultySpeedFactor);
+            tellTime = tellTime / (difficultyLevel * PlayerData.difficultySpeedFactor);
+        }
+
     }
 
     // Update is called once per frame

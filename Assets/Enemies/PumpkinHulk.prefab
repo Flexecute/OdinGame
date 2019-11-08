@@ -9582,10 +9582,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c87e96210503741b2fe291a944f080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 11400000, guid: e9140a4969fe91a42b25a67fed820510, type: 2}
   firePoint: {fileID: 265991565}
   tellTime: 1.82
   tellSound: {fileID: 11400000, guid: 6541aaa22e1061a479ceb525ba0d1af5, type: 2}
+  bulletPrefab: {fileID: 1583705797439260068, guid: 8065aa4dc11716c40a32a376ce128cc1,
+    type: 3}
+  attackRate: 6
+  damage: 1
+  bulletSpeed: 0.2
+  weaponRange: 15
+  bulletWidth: 5
+  pierce: -1
+  attackAnimationPrefab: {fileID: 1314945738539566, guid: 32c9fd11a72259d45aa26ae41c34c5aa,
+    type: 3}
+  shootableLayers: 09000000
+  attackSound: {fileID: 11400000, guid: f501aad6c5cb17e40a5cd0eb4aaaf94c, type: 2}
 --- !u!1 &4153585858265419790
 GameObject:
   m_ObjectHideFlags: 0

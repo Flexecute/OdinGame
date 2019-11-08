@@ -16,7 +16,10 @@ public class PlayerData
 
     public const int FirstLevel = 4;
     public const int LastLevel = 6;
+    public const float difficultySpeedFactor = 2f;
     public int currentLevel=FirstLevel;
+
+    public int difficultyLevel=0;
     public float previousLevelTime=0f;
 
     static PlayerData _instance = null;
@@ -144,6 +147,7 @@ public class PlayerData
         powerupOnAbility.Clear();
         unusedPowerups.Clear();
         currentLevel = FirstLevel;
+        difficultyLevel = 0;
     }
 
     internal void SetUnusedPowerups(List<AbilityPowerup> powerups)
@@ -159,6 +163,11 @@ public class PlayerData
     {
         currentLevel++;
         // Go to extra difficulty if level's > total levels
+        if (currentLevel > LastLevel)
+        {
+            currentLevel = FirstLevel;
+            difficultyLevel++;
+        }
 
         // Record the amount of time taken
         previousLevelTime = timeTaken;

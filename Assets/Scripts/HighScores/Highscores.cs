@@ -9,8 +9,19 @@ public class Highscores : MonoBehaviour
 
     static readonly string[] privateCode = { "0", "1", "2", "3", "cmIbMIbPIEupfp_auVEfiw7G1391V29U2hb8Vq5o5tZg",
                                                             "BdxnKyAFmkGNGEQiZ9VYcQr7bhi7wFvkqEuQBaPcoiKw",
-                                                            "zm0tddD1j0iBD3NBTdDg0wexpR0k5nsU6d_IuTRfxm0A"};
-    static readonly string[] publicCode = { "0", "1", "2", "3", "5dbff28ad1041303ecef0069", "5dc01971d1041303ecefd40e", "5dc01a20d1041303ecefd8d9"};
+                                                            "zm0tddD1j0iBD3NBTdDg0wexpR0k5nsU6d_IuTRfxm0A",
+                            "mXWJrPj-H0SbIkjLtcdjTAtZAfepmISE-STGFYmMM2Pw",
+                            "NLPADYNhMEuoLoQgBlFtEAr3YLkQ1QWkmwO64qvG_X4Q",
+                            "za88MINVEEmTcPe8MfAF8Aj0SraMOyJki6MoOynYYx2w",
+    "QoIVDumdq0CTIFcR-oEPrQ9n2jLtCXk0K_fyXQa2FLzg", "O40lJdwJHEundnzNMujMrQ_6czJ-db7UargBm2lJY1Yg","pD9WZ2Ab3k62_x9LG2CHzQKonxOtgFlUahF-ZDKK19xw"};
+    static readonly string[] publicCode = { "0", "1", "2", "3",
+                            "5dbff28ad1041303ecef0069",
+                            "5dc01971d1041303ecefd40e",
+                            "5dc01a20d1041303ecefd8d9",
+                            "5dc5e43bd1041303ec0fab78",
+                            "5dc5e4a5d1041303ec0faeb7",
+                            "5dc5e4c8d1041303ec0fb01b",
+    "5dc5eb50d1041303ec0fdb11", "5dc5eb84d1041303ec0fdc0a", "5dc5eba1d1041303ec0fdc8c"};
     const string webURL = "http://dreamlo.com/lb/";
     const int maxEntries = 10;
 
@@ -24,11 +35,24 @@ public class Highscores : MonoBehaviour
         highscoreDisplay = GetComponent<DisplayHighscores>();
         instance = this;
         playerData = PlayerData.Instance;
-        // Add this new high score
-        if (playerData.previousLevelTime > 0)
-            AddAndRetrieveHighScores(playerData.username, 2000f / playerData.previousLevelTime, playerData.previousLevelTime, playerData.currentLevel - 1);
-        else
-            DownloadHighscores(playerData.currentLevel-1);
+        // Need to offset highscores according to difficulty level
+        int previousLevel;
+        // If the player just finished the last level and has returned to first level, they actually just completed the last level
+        if (playerData.currentLevel == PlayerData.FirstLevel)
+        {
+            previousLevel = PlayerData.LastLevel + (playerData.difficultyLevel - 1) * (PlayerData.LastLevel - PlayerData.FirstLevel + 1);
+        } else
+        {
+            previousLevel = playerData.currentLevel - 1 + (playerData.difficultyLevel) * (PlayerData.LastLevel - PlayerData.FirstLevel + 1);
+        }
+        if (previousLevel <= privateCode.Length)
+        {
+            // Add this new high score
+            if (playerData.previousLevelTime > 0)
+                AddAndRetrieveHighScores(playerData.username, 2000f / playerData.previousLevelTime, playerData.previousLevelTime, previousLevel);
+            else
+                DownloadHighscores(previousLevel);
+        }
     }
 
     public static void AddAndRetrieveHighScores(string username, float score, float seconds, int levelNumber)

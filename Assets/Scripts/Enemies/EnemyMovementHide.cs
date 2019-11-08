@@ -47,6 +47,11 @@ public class EnemyMovementHide : MonoBehaviour, IColdable
             obstacleMask += (1 << layer);
         }
         path = new NavMeshPath();
+
+        // Factor movement speed according to difficulty
+        int difficultyLevel = PlayerData.Instance.difficultyLevel;
+        if (difficultyLevel > 0)
+            navMeshAgent.speed = navMeshAgent.speed * (difficultyLevel * PlayerData.difficultySpeedFactor);
     }
 
     private void avoidTarget(Transform target)

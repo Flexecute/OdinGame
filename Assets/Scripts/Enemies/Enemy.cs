@@ -26,6 +26,10 @@ public class Enemy : MonoBehaviour, IColdable
         enemyHealth.OnHit += Health_OnHit;
         enemyHealth.OnDeath += Health_OnDeath;
         meshRenderers = GetComponentsInChildren<Renderer>();
+        // Factor animation speed based on difficulty to account for enemy speed up
+        int difficultyLevel = PlayerData.Instance.difficultyLevel;
+        if (difficultyLevel > 0)
+            animator.SetAnimationSpeed(difficultyLevel * PlayerData.difficultySpeedFactor);
 
     }
 

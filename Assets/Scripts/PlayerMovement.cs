@@ -13,6 +13,14 @@ public class PlayerMovement : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         animatorController = GetComponentInChildren<PlayerAnimationController>();
+        // Factor animation speed based on difficulty to account for enemy speed up
+        int difficultyLevel = PlayerData.Instance.difficultyLevel;
+        if (difficultyLevel > 0)
+        {
+            animatorController.SetAnimationSpeed(difficultyLevel * (1 + (PlayerData.difficultySpeedFactor-1)/3));
+            moveSpeed = moveSpeed * difficultyLevel * (1 + (PlayerData.difficultySpeedFactor - 1) / 3);
+        }
+
     }
 
     private void Update()

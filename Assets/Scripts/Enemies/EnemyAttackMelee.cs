@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyAttackMelee : MonoBehaviour, IColdable
 {
     [SerializeField]
-    private float attackRefreshRate = 3f;
+    private float attackRate = 3f;
     [SerializeField]
     private int attackDamage=1;
     [SerializeField]
@@ -25,6 +25,15 @@ public class EnemyAttackMelee : MonoBehaviour, IColdable
 
     private void Awake() {
         animator = transform.parent.GetComponentInChildren<PlayerAnimationController>();
+
+        // Factor attack rate according to difficulty
+        int difficultyLevel = PlayerData.Instance.difficultyLevel;
+        if (difficultyLevel > 0)
+        {
+            attackRate = attackRate / (difficultyLevel * PlayerData.difficultySpeedFactor);
+            tellTime = tellTime / (difficultyLevel * PlayerData.difficultySpeedFactor);
+        }
+
     }
 
     void Update()
@@ -64,7 +73,7 @@ public class EnemyAttackMelee : MonoBehaviour, IColdable
 
     private bool CanAttack()
     {
-        return (healthTarget != null && attackTimer >= attackRefreshRate);
+        return (healthTarget != null && attackTimer >= attackRate);
     }
 
     private void StartAttack()

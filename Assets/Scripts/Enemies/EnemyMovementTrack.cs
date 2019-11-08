@@ -21,11 +21,18 @@ public class EnemyMovementTrack : MonoBehaviour, IColdable
     {
         animator = GetComponentInChildren<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
-        baseSpeed = navMeshAgent.speed;
         meleeRange = navMeshAgent.stoppingDistance;
         rotationSpeed = navMeshAgent.angularSpeed;
         aggroDetection = GetComponentInChildren<AggroDetection>();
         aggroDetection.OnAggro += trackTarget;
+
+        // Factor movement speed according to difficulty
+        int difficultyLevel = PlayerData.Instance.difficultyLevel;
+        if (difficultyLevel > 0)
+            navMeshAgent.speed = navMeshAgent.speed * (difficultyLevel * PlayerData.difficultySpeedFactor);
+
+        baseSpeed = navMeshAgent.speed;
+
     }
 
     private void trackTarget(Transform target)

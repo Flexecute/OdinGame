@@ -13,6 +13,7 @@ public class RewardLevelMenu : MonoBehaviour
     public AbilityPowerup selectedPowerup;
     public GameObject selectedPowerupHolder;
     public GameObject[] abilityHolder;
+    public GameObject victoryPanel;
 
     public PlayerData pd; // Dodgy pointer to playerData to prevent constant errors with the static singleton scriptable object
     private PlayerData playerData;
@@ -23,7 +24,12 @@ public class RewardLevelMenu : MonoBehaviour
         // Find the previous level completion time
         playerData = PlayerData.Instance;
         previousTimeText.text = Math.Round(playerData.previousLevelTime, 2) + " seconds";
-        // Find the rewards from previous level (TODO)
+
+        // Did the player just win? Show the victory panel
+        if (playerData.currentLevel == PlayerData.FirstLevel)
+        {
+            victoryPanel.SetActive(true);
+        }
         // Fill in the reward Holders with the rewards
         for (int i = 0; i < Math.Min(powerupHolders.Length, powerups.Length); i++)
         {
@@ -47,6 +53,7 @@ public class RewardLevelMenu : MonoBehaviour
 
         // Select the first powerup
         SelectPowerup(powerupHolders[0]);
+
     }
 
     public void UpdateInfoText(GameObject powerupHolder)

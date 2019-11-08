@@ -11,7 +11,7 @@ public class LightningAbility : Ability
     public GameObject lightningPrefab;
     public int[] shootableLayers;
     public int extraShots;
-    public int multishotSpreadAngle = 10;
+    public int multishotSpreadAngle = 20;
     public float weaponRange = 10f;
     //public int pierce;
 
