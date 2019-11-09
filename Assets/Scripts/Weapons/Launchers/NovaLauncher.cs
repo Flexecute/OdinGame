@@ -6,7 +6,7 @@ public class NovaLauncher : MonoBehaviour
 {
     // These properties should be set by the Ability on Initialise
     [HideInInspector] public int damage = 1;
-    [HideInInspector] public float radius = 10f;
+    [HideInInspector] public float weaponRange = 10f;
     [HideInInspector] public float coldEffect = 0.5f;
     [HideInInspector] public float coldDuration = 5f;
     public GameObject attackAnimationPrefab;
@@ -50,7 +50,7 @@ public class NovaLauncher : MonoBehaviour
             attackAnimation.Play();
 
         // Check if anything is hit within range
-        Collider[] colliders = Physics.OverlapSphere(transform.position, radius, shootableLayerMask);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, weaponRange, shootableLayerMask);
         foreach (Collider collider in colliders)
         {
             // Reduce the health of the 'shootable' if it has health

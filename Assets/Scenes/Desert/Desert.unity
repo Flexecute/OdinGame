@@ -107,7 +107,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 25.9
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -14883,7 +14883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 52.16
+      value: 44.93
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalRotation.x
@@ -16756,3 +16756,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: f27d2a87b8553f8438fadbb8f50e9bbd, type: 3}
+  centerHotspot: 1

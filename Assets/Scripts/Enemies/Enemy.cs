@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour, IColdable
         meshRenderers = GetComponentsInChildren<Renderer>();
         // Factor animation speed based on difficulty to account for enemy speed up
         int difficultyLevel = PlayerData.Instance.difficultyLevel;
-        if (difficultyLevel > 0)
+        if (difficultyLevel > 0 && animator != null)
             animator.SetAnimationSpeed(difficultyLevel * PlayerData.difficultySpeedFactor);
 
     }

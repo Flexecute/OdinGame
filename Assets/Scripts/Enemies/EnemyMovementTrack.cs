@@ -29,7 +29,10 @@ public class EnemyMovementTrack : MonoBehaviour, IColdable
         // Factor movement speed according to difficulty
         int difficultyLevel = PlayerData.Instance.difficultyLevel;
         if (difficultyLevel > 0)
+        {
             navMeshAgent.speed = navMeshAgent.speed * (difficultyLevel * PlayerData.difficultySpeedFactor);
+            navMeshAgent.angularSpeed = navMeshAgent.angularSpeed * (difficultyLevel * PlayerData.difficultySpeedFactor);
+        } 
 
         baseSpeed = navMeshAgent.speed;
 

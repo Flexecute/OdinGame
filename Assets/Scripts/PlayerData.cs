@@ -16,7 +16,7 @@ public class PlayerData
 
     public const int FirstLevel = 4;
     public const int LastLevel = 6;
-    public const float difficultySpeedFactor = 2f;
+    public const float difficultySpeedFactor = 1.75f;
     public int currentLevel=FirstLevel;
 
     public int difficultyLevel=0;

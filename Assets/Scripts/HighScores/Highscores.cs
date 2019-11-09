@@ -49,7 +49,7 @@ public class Highscores : MonoBehaviour
         {
             // Add this new high score
             if (playerData.previousLevelTime > 0)
-                AddAndRetrieveHighScores(playerData.username, 2000f / playerData.previousLevelTime, playerData.previousLevelTime, previousLevel);
+                AddAndRetrieveHighScores(playerData.username, 5000f / playerData.previousLevelTime, playerData.previousLevelTime, previousLevel);
             else
                 DownloadHighscores(previousLevel);
         }

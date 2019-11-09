@@ -18,7 +18,7 @@ MonoBehaviour:
   aBaseCooldown: 2
   tellTime: 0.25
   cameraRange: 1
-  damage: 1
+  damage: 2
   forks: 2
   lightningPrefab: {fileID: 178460, guid: 0de10b6f4cb9f654fba876febb2b10a9, type: 3}
   shootableLayers: 080000000a000000

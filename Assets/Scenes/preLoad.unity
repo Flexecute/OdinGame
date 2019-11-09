@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 2048719832}
   - component: {fileID: 2048719827}
   - component: {fileID: 2048719834}
+  - component: {fileID: 2048719833}
   m_Layer: 0
   m_Name: __app
   m_TagString: Untagged
@@ -382,6 +383,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9041b8e292e984f4daf5f2254f04861f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2048719833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048719826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c0283541f4ae4440b14837c7670322c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilties:
+  - {fileID: 11400000, guid: 4bc7719bf7809184181b84dd898f491b, type: 2}
+  - {fileID: 11400000, guid: 14b6abfb78ede4d4c8e830887899edbf, type: 2}
+  - {fileID: 11400000, guid: a826a8bcf600f704c88ebc81b4b31bc9, type: 2}
+  - {fileID: 11400000, guid: 7ab11bcb38ee0bc4cb3bd24a73e4bc6d, type: 2}
+  abiltyPowerups:
+  - {fileID: 11400000, guid: 7816b3f400e7b80469f74d4aa3a5af87, type: 2}
+  - {fileID: 11400000, guid: f32b36f4be62ecb438d22caa7e2b1292, type: 2}
+  - {fileID: 11400000, guid: d7ccccf0451271746b9eeb06d03e16ba, type: 2}
+  - {fileID: 11400000, guid: 558aa1e1f3532c34db40a4726259e622, type: 2}
 --- !u!114 &2048719834
 MonoBehaviour:
   m_ObjectHideFlags: 0

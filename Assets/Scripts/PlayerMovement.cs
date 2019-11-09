@@ -17,8 +17,9 @@ public class PlayerMovement : MonoBehaviour
         int difficultyLevel = PlayerData.Instance.difficultyLevel;
         if (difficultyLevel > 0)
         {
-            animatorController.SetAnimationSpeed(difficultyLevel * (1 + (PlayerData.difficultySpeedFactor-1)/3));
-            moveSpeed = moveSpeed * difficultyLevel * (1 + (PlayerData.difficultySpeedFactor - 1) / 3);
+            float increaseSpeed = System.Math.Min(1.75f, difficultyLevel * (1 + (PlayerData.difficultySpeedFactor - 1) / 3));
+            animatorController.SetAnimationSpeed(increaseSpeed);
+            moveSpeed = moveSpeed * increaseSpeed;
         }
 
     }

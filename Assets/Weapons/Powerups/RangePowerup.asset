@@ -19,5 +19,5 @@ MonoBehaviour:
   values:
   - 1.5
   - 1.25
-  sprite: {fileID: 21300000, guid: 96281732b7dd97f43848d6dec60fd16b, type: 3}
+  sprite: {fileID: 21300000, guid: 42f6c722ead369b4b934a116b4324a4d, type: 3}
   infoText: Range increased at the expense of cooldown

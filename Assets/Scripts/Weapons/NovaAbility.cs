@@ -7,7 +7,7 @@ using UnityEngine;
 public class NovaAbility : Ability
 {
     public int damage = 1;
-    public float radius = 10f;
+    public float weaponRange = 10f;
     public float coldEffect = 0.5f;
     public float coldDuration = 5f;
     public GameObject attackAnimationPrefab;
@@ -21,7 +21,7 @@ public class NovaAbility : Ability
         launcher = obj.AddComponent<NovaLauncher>();
         // Set the appropriate values
         launcher.damage = damage;
-        launcher.radius = radius;
+        launcher.weaponRange = weaponRange * PowerupThisPropertyMultiply("weaponRange", powerups);
         launcher.coldEffect = coldEffect;
         launcher.coldDuration = coldDuration;
         launcher.attackAnimationPrefab = attackAnimationPrefab;
