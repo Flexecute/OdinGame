@@ -1,1 +1,3 @@
 https://itch.io/game/edit/511157#published
+
+butler push Odin flexecute/odin:windows-64
