@@ -26,7 +26,7 @@ public class InitVolSliders : MonoBehaviour
             usernamePanel.SetActive(true);
         }
 
-        if (playerData.currentLevel <= PlayerData.FirstLevel)
+        if (playerData.currentLevel <= PlayerData.FirstLevel && playerData.difficultyLevel <= 0)
         {
             // Disable the start new button
             startNewButton.SetActive(false);

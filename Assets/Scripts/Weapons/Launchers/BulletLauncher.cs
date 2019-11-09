@@ -12,7 +12,7 @@ public class BulletLauncher : MonoBehaviour
     [HideInInspector] public float weaponRange;
     [HideInInspector] public int pierce;
 
-    public int multishotSpreadAngle = 5;
+    public int multishotSpreadAngle = 10;
     public ParticleSystem gunshotAnimation;
     public int[] shootableLayers;
     private int shootableLayerMask;

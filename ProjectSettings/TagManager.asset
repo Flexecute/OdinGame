@@ -9,6 +9,7 @@ TagManager:
   - BulletImpact
   - Weapon
   - Difficulty1
+  - Difficulty2
   layers:
   - Default
   - TransparentFX

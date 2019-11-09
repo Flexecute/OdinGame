@@ -23,6 +23,26 @@ public class LoadOnClick : MonoBehaviour
     }
 
     /// <summary>
+    /// If the player has completed any levels, give them the change to 'respec', else just start the game
+    /// </summary>
+    public void LoadPowerupScreen()
+    {
+        PlayerData playerData = PlayerData.Instance;
+        if (playerData.currentLevel > PlayerData.FirstLevel || playerData.difficultyLevel > 0)
+        {
+            SceneManager.LoadScene(3);
+        } else
+        {
+            loadImage.SetActive(true);
+            // Load the next scene of the player
+            if (playerData.currentLevel > PlayerData.LastLevel)
+                SceneManager.LoadScene(PlayerData.LastLevel);
+            else
+                SceneManager.LoadScene(playerData.currentLevel);
+        }
+    }
+
+    /// <summary>
     /// Effectively starts again, resetting the player's powerups and current level
     /// </summary>
     public void ResetPlayerData()

@@ -13,11 +13,19 @@ public class AddDifficultyEnemies : MonoBehaviour
         {
             // Find all enemies tagged with difficulty and level and de-activate them
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Difficulty1");
-            
             for (int i = 0; i < enemies.Length; i++)
             {
                 enemies[i].SetActive(false);
             }
+        }
+        if (playerData.difficultyLevel <= 1)
+        {
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Difficulty2");
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                enemies[i].SetActive(false);
+            }
+
         }
     }
     

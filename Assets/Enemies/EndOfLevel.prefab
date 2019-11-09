@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4692739962342286182}
   - component: {fileID: 1254591363205988159}
   - component: {fileID: 1005593787272666438}
+  - component: {fileID: 708631748715493909}
   m_Layer: 0
   m_Name: EndOfLevel
   m_TagString: Untagged
@@ -224,3 +225,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883fc94e64f3cee40a69d39c5966dd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &708631748715493909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4692739960559408994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119a106ed705ef84981fa85af7727a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: f27d2a87b8553f8438fadbb8f50e9bbd, type: 3}

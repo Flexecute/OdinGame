@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 4566640}
   - component: {fileID: 4566641}
   - component: {fileID: 4566642}
+  - component: {fileID: 4566643}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -274,6 +275,20 @@ MonoBehaviour:
   startNewButton: {fileID: 1432180073}
   continueButton: {fileID: 1173963054}
   usernamePanel: {fileID: 1570216974}
+--- !u!114 &4566643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4566635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119a106ed705ef84981fa85af7727a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 18998ef35f6b8474984b039c3366b132, type: 3}
+  centerHotspot: 0
 --- !u!1001 &23613375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6412,12 +6427,12 @@ PrefabInstance:
     - target: {fileID: 6986280735861610268, guid: 6af6306a5cfc56241b4120de70d4fae4,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6986280735861610268, guid: 6af6306a5cfc56241b4120de70d4fae4,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadNextScene
+      value: LoadPowerupScreen
       objectReference: {fileID: 0}
     - target: {fileID: 6986280735861610268, guid: 6af6306a5cfc56241b4120de70d4fae4,
         type: 3}

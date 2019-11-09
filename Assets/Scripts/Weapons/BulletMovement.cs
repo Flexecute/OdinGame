@@ -33,11 +33,6 @@ public class BulletMovement : MonoBehaviour
     {
 
         bulletSpeed = initSpeed;
-        // All bullets go faster at higher difficulty
-        int difficultyLevel = PlayerData.Instance.difficultyLevel;
-        if (difficultyLevel > 0)
-            bulletSpeed = bulletSpeed * (difficultyLevel * PlayerData.difficultySpeedFactor);
-
         damage = initDamage;
         direction = initDirection.normalized;
         prevPos = transform.position;
